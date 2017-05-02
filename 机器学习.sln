@@ -3,9 +3,11 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 14
 VisualStudioVersion = 14.0.25420.1
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{888888A0-9F3D-457C-B088-3A5042F75D52}") = "BP神经网络", "..\BP神经网络\BP神经网络\BP神经网络.pyproj", "{F34E44C9-BDBE-4BAC-ABD7-57B365550C69}"
-EndProject
 Project("{888888A0-9F3D-457C-B088-3A5042F75D52}") = "朴素贝叶斯", "朴素贝叶斯\朴素贝叶斯.pyproj", "{F91C0C3E-CC42-45BB-A641-0BDFAA7270AE}"
+EndProject
+Project("{888888A0-9F3D-457C-B088-3A5042F75D52}") = "BP神经网络", "BP神经网络\BP神经网络\BP神经网络.pyproj", "{F34E44C9-BDBE-4BAC-ABD7-57B365550C69}"
+EndProject
+Project("{888888A0-9F3D-457C-B088-3A5042F75D52}") = "SVM", "SVM\SVM.pyproj", "{79282FBD-981C-4488-8AE4-02EAF23319E3}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -13,10 +15,12 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{F34E44C9-BDBE-4BAC-ABD7-57B365550C69}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{F34E44C9-BDBE-4BAC-ABD7-57B365550C69}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{F91C0C3E-CC42-45BB-A641-0BDFAA7270AE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{F91C0C3E-CC42-45BB-A641-0BDFAA7270AE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F34E44C9-BDBE-4BAC-ABD7-57B365550C69}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F34E44C9-BDBE-4BAC-ABD7-57B365550C69}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{79282FBD-981C-4488-8AE4-02EAF23319E3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{79282FBD-981C-4488-8AE4-02EAF23319E3}.Release|Any CPU.ActiveCfg = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

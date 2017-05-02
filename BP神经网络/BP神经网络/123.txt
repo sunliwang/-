@@ -1,0 +1,26 @@
+import numpy as np
+
+def loaddata(filename):
+    fr = open(filename)
+    line = fr.readlines()
+    numberofline = len(line)
+    data = np.zeros((numberofline, 8))
+    labels = np.zeros((numberofline, 1))
+    index = 0
+    for context in line:
+        context = context.strip().split(',')
+        data[index,:] = context[0:8]
+        labels[index, 0] = context[-1]
+        index += 1
+    return data, labels
+
+	
+
+def unification(datamatrix):
+    minvalues = datamatrix.min(0)
+    maxvalues = datamatrix.max(0)
+    ranges = maxvalues - minvalues
+    numberofline = datamatrix.shape[0]
+    normmatrix = datamatrix - np.tile(minvalues, (numberofline, 1))
+    normmatrix = normmatrix / np.tile(ranges, (numberofline, 1))
+    return normmatrix
